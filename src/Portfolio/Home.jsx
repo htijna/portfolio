@@ -6,6 +6,7 @@ import './styles.css';
 import axios from 'axios';
 import proj2 from './img/1.png';
 import profilepic from './img/profile1.png'
+import { useMediaQuery } from '@mui/material';
 
 const Home = () => {
   const [name, setName] = useState('');
@@ -14,6 +15,8 @@ const Home = () => {
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const isMobile = useMediaQuery('(max-width:600px)');
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -58,8 +61,8 @@ const Home = () => {
   return (
     <div>
       <header>
-        <div className="container">
-          <div className="logo">PORTFOLIO</div>
+        <div className="container" style={isMobile? {marginLeft:'-10px' }:{}}>
+          {!isMobile&&<div className="logo">AKJ</div>}
           <nav>
             <ul>
               <li><a href="#about">ABOUT</a></li>
@@ -104,17 +107,16 @@ const Home = () => {
         <div className="container">
           <h2>My <span className='h3col'>Services</span></h2>
           <div className="services-grid">
-            <div className="service">
-              <i className="fas fa-shield-alt"></i>
+            <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3>Threat Analysis</h3>
               <p>Identifying and mitigating potential cybersecurity threats.</p>
             </div>
-            <div className="service">
+            <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
               <i className="fas fa-lock"></i>
               <h3>Data Protection</h3>
               <p>Implementing robust measures to safeguard sensitive data.</p>
             </div>
-            <div className="service">
+            <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
               <i className="fas fa-network-wired"></i>
               <h3>Network Security</h3>
               <p>Ensuring secure and resilient network infrastructure.</p>
@@ -124,7 +126,7 @@ const Home = () => {
       </section>
 
       <section id="projects" className="section">
-        <div className="container">
+        <div className="container" style={isMobile?{marginLeft:'20px'}:{}}>
           <h2>Projects</h2>
           <div className="project-grid">
             <div className="project">

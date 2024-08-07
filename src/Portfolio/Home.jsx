@@ -7,6 +7,12 @@ import axios from 'axios';
 import proj2 from './img/1.png';
 import profilepic from './img/profile1.png'
 import { useMediaQuery } from '@mui/material';
+import { AiFillAlert } from "react-icons/ai";
+import { FaKey,  FaBomb , FaDatabase} from 'react-icons/fa';
+import { AiOutlineWarning } from 'react-icons/ai';
+import { MdAutorenew ,MdSecurity } from 'react-icons/md';
+import { MdComputer } from 'react-icons/md';
+import { AiOutlineSolution } from 'react-icons/ai';
 
 const Home = () => {
   const [name, setName] = useState('');
@@ -108,13 +114,13 @@ const Home = () => {
           <h2>My <span className='h3col'>Services</span></h2>
           <div className="services-grid">
             <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
-              <h3>Threat Analysis</h3>
-              <p>Identifying and mitigating potential cybersecurity threats.</p>
+              <h3>Vulnerability Assessment (VA)</h3>
+              <p>  identifying and mitigating security weaknesses in systems and networks.</p>
             </div>
             <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
               <i className="fas fa-lock"></i>
-              <h3>Data Protection</h3>
-              <p>Implementing robust measures to safeguard sensitive data.</p>
+              <h3>Penetration Testing</h3>
+              <p> identify and exploit vulnerabilities in systems and networks.</p>
             </div>
             <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
               <i className="fas fa-network-wired"></i>
@@ -124,6 +130,62 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section id="skills" className="section">
+        <div className="container">
+          <h2>My <span className='h3col'>Skills</span></h2>
+          <div className="skills-grid">
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <AiFillAlert  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Incident response</span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}>   quickly responding when security incidents do occur is critical to minimize damage.</p>
+            </div>
+
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <MdSecurity  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Network security</span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}>  Detect and monitor unauthorized access or misuse of a network.</p>
+            </div>
+
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <MdAutorenew  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Adaptability </span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Adapt quickly to changing environments and challenges.</p>
+            </div>
+           
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <AiOutlineWarning  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Risk analysis </span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Evaluate and assess potential risks to identify and mitigate threats.</p>
+            </div>
+
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <FaBomb style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Penetration Testing </span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Simulate attacks to identify and exploit system vulnerabilities..</p>
+            </div>
+
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <FaKey  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'>  Access Management (IAM) </span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Control and monitor user access to resources and systems.</p>
+            </div>
+
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <FaDatabase  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Data Management  </span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}>Organize and maintain data effectively to ensure its accuracy and availability.</p>
+            </div>
+
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <MdComputer  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Computer network & system administration </span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Manage and maintain network infrastructure and system operations to ensure reliability and performance.</p>
+            </div>
+
+            
+            <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
+              <h3> <AiOutlineSolution  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Problem solving </span></h3>
+              <p style={{ color: 'grey', fontSize: '14px' }}>Identify and resolve issues effectively..</p>
+            </div>
+
+          </div>
+        </div>
+      </section>  
+
+
 
       <section id="projects" className="section">
         <div className="container" style={isMobile?{marginLeft:'20px'}:{}}>

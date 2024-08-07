@@ -179,6 +179,31 @@ h2 {
 
 
 
+#skills {
+    background: url('./img/bg4.png') no-repeat center center/cover;
+ 
+    color: #fff;
+    position: relative;
+  
+}
+
+#skills::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#skills .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+
 
 
 #projects {
@@ -238,7 +263,7 @@ h2 {
 
 
 
-.services-grid, .project-grid {
+.services-grid, .project-grid ,.skills-grid{
    
     display: flex;
     justify-content: space-around;
@@ -253,6 +278,17 @@ h2 {
     flex-basis: 30%;
     text-align: center;
     border-radius: 5px;
+}
+
+.skills {
+    background: url('./img/5.png') no-repeat center center/cover;;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+   
 }
 
 /* .project {

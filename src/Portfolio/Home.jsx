@@ -84,7 +84,7 @@ const Home = () => {
         <div>
           <div className="container">
             <h1>Cyber Security</h1>
-            <p>Securing the digital world, one byte at a time.</p>
+            <p>Securing the digital world, one byte at a time</p>
             <a href="#about" className="btn">Learn More</a>
           </div>
         </div>
@@ -115,17 +115,17 @@ const Home = () => {
           <div className="services-grid">
             <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3>Vulnerability Assessment (VA)</h3>
-              <p>  identifying and mitigating security weaknesses in systems and networks.</p>
+              <p>  identifying and mitigating security weaknesses in systems and networks</p>
             </div>
             <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
               <i className="fas fa-lock"></i>
               <h3>Penetration Testing</h3>
-              <p> identify and exploit vulnerabilities in systems and networks.</p>
+              <p> identify and exploit vulnerabilities in systems and networks</p>
             </div>
             <div className="service" style={isMobile?{flexBasis:'100%'}:{}}>
               <i className="fas fa-network-wired"></i>
               <h3>Network Security</h3>
-              <p>Ensuring secure and resilient network infrastructure.</p>
+              <p>Ensuring secure and resilient network infrastructure</p>
             </div>
           </div>
         </div>
@@ -142,43 +142,43 @@ const Home = () => {
 
             <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3> <MdSecurity  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Network security</span></h3>
-              <p style={{ color: 'grey', fontSize: '14px' }}>  Detect and monitor unauthorized access or misuse of a network.</p>
+              <p style={{ color: 'grey', fontSize: '14px' }}>  Detect and monitor unauthorized access or misuse of a network</p>
             </div>
 
             <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3> <MdAutorenew  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Adaptability </span></h3>
-              <p style={{ color: 'grey', fontSize: '14px' }}> Adapt quickly to changing environments and challenges.</p>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Adapt quickly to changing environments and challenges</p>
             </div>
            
             <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3> <AiOutlineWarning  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Risk analysis </span></h3>
-              <p style={{ color: 'grey', fontSize: '14px' }}> Evaluate and assess potential risks to identify and mitigate threats.</p>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Evaluate and assess potential risks to identify and mitigate threats</p>
             </div>
 
             <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3> <FaBomb style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Penetration Testing </span></h3>
-              <p style={{ color: 'grey', fontSize: '14px' }}> Simulate attacks to identify and exploit system vulnerabilities..</p>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Simulate attacks to identify and exploit system vulnerabilities</p>
             </div>
 
             <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3> <FaKey  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'>  Access Management (IAM) </span></h3>
-              <p style={{ color: 'grey', fontSize: '14px' }}> Control and monitor user access to resources and systems.</p>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Control and monitor user access to resources and systems</p>
             </div>
 
             <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3> <FaDatabase  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Data Management  </span></h3>
-              <p style={{ color: 'grey', fontSize: '14px' }}>Organize and maintain data effectively to ensure its accuracy and availability.</p>
+              <p style={{ color: 'grey', fontSize: '14px' }}>Organize and maintain data effectively to ensure its accuracy and availability</p>
             </div>
 
             <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3> <MdComputer  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Computer network & system administration </span></h3>
-              <p style={{ color: 'grey', fontSize: '14px' }}> Manage and maintain network infrastructure and system operations to ensure reliability and performance.</p>
+              <p style={{ color: 'grey', fontSize: '14px' }}> Manage and maintain network infrastructure and system operations to ensure reliability and performance</p>
             </div>
 
             
             <div className="skills" style={isMobile?{flexBasis:'100%'}:{}}>
               <h3> <AiOutlineSolution  style={{ color: 'white', fontSize: '24px' }}/> &nbsp;<span className='h3col'> Problem solving </span></h3>
-              <p style={{ color: 'grey', fontSize: '14px' }}>Identify and resolve issues effectively..</p>
+              <p style={{ color: 'grey', fontSize: '14px' }}>Identify and resolve issues effectively</p>
             </div>
 
           </div>
